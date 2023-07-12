@@ -1,0 +1,80 @@
+# リスト
+`for ... in` を使った繰り返し処理を行う練習問題です。
+
+## 問題1: リストの要素の合計
+
+次で与えられたリスト `numbers` の要素の合計を計算するプログラムを作成してください。ただし、合計を計算するために `for ... in` を使ってください。
+
+``` python
+numbers = [3, 4, 2, 5, 1]
+total = 0
+
+# プログラムを書く
+
+print('合計:', total)
+```
+
+## 問題2: リストの最大値
+
+次で与えられたリスト `numbers` の最大値を見つけるプログラムを作成してください。ただし、 `for ... in` を使ってプログラムを書いてください。
+
+``` python
+numbers = [5, 9, 2, 1, 7, 4, 3]
+max_value = numbers[0]
+
+# プログラムを書く
+
+print('最大値:', max_value)
+```
+
+## 問題3: リストの要素の平均値
+
+次で与えられたリスト `numbers` の要素の平均値を計算するプログラムを作成してください。ただし、 `for ... in` を使ってプログラムを書いてください。
+
+``` python
+numbers = [4, 2, 3, 6, 1, 5]
+
+# プログラムを書く
+
+average = total / len(numbers)
+print('平均値:', average)
+```
+
+## 問題4: 偶数を探す
+
+次で与えられたリストから偶数の要素のみを取り出して新しいリストを作成してください。ただし、 `for ... in` を使ってプログラムを書いてください。
+
+``` python
+numbers = [1, 4, 7, 2, 6, 3, 8]
+even_numbers = []
+
+# プログラムを書く
+
+print('偶数のリスト:', even_numbers)
+```
+
+## 問題5: 文字列の検索
+
+次で与えられた文字列のリスト `words` から、指定された条件 `search_term` を含む文字列を検索するプログラムを作成してください。ただし、 `for ... in` を使ってプログラムを書いてください。
+
+``` python
+words = ['apple', 'banana', 'grapefruit', 'orange']
+search_term = 'an'
+matching_words = []
+
+for word in words:
+    if search_term in word:
+        matching_words.append(word)
+
+print("条件に合う文字列:", matching_words)
+```
+
+> printされる結果は `['banana', 'orange']` になります。
+
+## 問題6: リストを扱う関数
+
+問題1,2,4 で書いたプログラムを応用して、次の関数をすべてプログラムしてください。
+
+* 引数にリストを取り、すべての要素の合計を返す（returnする）関数 `total_list()` 
+* 引数にリストを取り、その最大値の要素を返す関数 `max_list()`
+* 引数にリストを取り、その中のすべての偶数の要素のリストで返す関数 `even_list()` 

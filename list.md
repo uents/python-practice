@@ -62,9 +62,7 @@ words = ['apple', 'banana', 'grapefruit', 'orange']
 search_term = 'an'
 matching_words = []
 
-for word in words:
-    if search_term in word:
-        matching_words.append(word)
+# プログラムを書く
 
 print("条件に合う文字列:", matching_words)
 ```

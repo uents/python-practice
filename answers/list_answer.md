@@ -5,9 +5,20 @@ numbers = [3, 4, 2, 5, 1]
 total = 0
 
 for num in numbers:
-    total += num
+    total = total + num
 
 print('合計:', total)
+```
+
+``` puml
+start
+:total = 0;
+repeat:
+    :要素を取り出してnumとする;
+    :total = total + num;
+repeat while (まだ取り出していない要素がある？)
+:合計を出力;
+stop
 ```
 
 ## 問題2: リストの最大値
@@ -29,9 +40,8 @@ print('最大値:', max_value)
 numbers = [4, 2, 3, 6, 1, 5]
 
 total = 0
-
 for num in numbers:
-    total += num
+    total = total + num
 
 average = total / len(numbers)
 print('平均値:', average)
@@ -57,10 +67,13 @@ words = ['apple', 'banana', 'grapefruit', 'orange']
 search_term = 'an'
 matching_words = []
 
-# プログラムを書く
+for word in words:
+    if search_term in word:
+        matching_words.append(word)
 
 print("条件に合う文字列:", matching_words)
 ```
 
 ## 問題6: リストを扱う関数
+
 省略
